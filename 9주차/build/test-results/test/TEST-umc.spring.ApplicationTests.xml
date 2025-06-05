@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="umc.spring.ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-27T08:47:46.652Z" hostname="LAPTOP-SUMD9L6B" time="0.693">
+  <properties/>
+  <testcase name="contextLoads()" classname="umc.spring.ApplicationTests" time="0.693"/>
+  <system-out><![CDATA[17:47:37.377 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [umc.spring.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:47:37.539 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration umc.spring.Application for test class umc.spring.ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.0)
+
+2025-05-27T17:47:38.218+09:00  INFO 19392 --- [    Test worker] umc.spring.ApplicationTests              : Starting ApplicationTests using Java 19.0.2 with PID 19392 (started by User in C:\spring\spring)
+2025-05-27T17:47:38.219+09:00  INFO 19392 --- [    Test worker] umc.spring.ApplicationTests              : No active profile set, falling back to 1 default profile: "default"
+2025-05-27T17:47:39.523+09:00  INFO 19392 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-27T17:47:39.704+09:00  INFO 19392 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170 ms. Found 6 JPA repository interfaces.
+2025-05-27T17:47:40.367+09:00  INFO 19392 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-27T17:47:40.468+09:00  INFO 19392 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2025-05-27T17:47:40.472+09:00  INFO 19392 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-05-27T17:47:40.729+09:00  INFO 19392 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2025-05-27T17:47:40.949+09:00  INFO 19392 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-27T17:47:40.974+09:00  INFO 19392 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-27T17:47:41.407+09:00  INFO 19392 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5072e638
+2025-05-27T17:47:41.410+09:00  INFO 19392 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-27T17:47:41.473+09:00  INFO 19392 --- [    Test worker] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.MySQL8Dialect, version: 8.0
+2025-05-27T17:47:41.475+09:00  WARN 19392 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-27T17:47:42.066+09:00  INFO 19392 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2025-05-27T17:47:43.328+09:00  INFO 19392 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: 
+    alter table food_category 
+       modify column created_at  datetime(6)
+Hibernate: 
+    alter table food_category 
+       modify column updated_at  datetime(6)
+Hibernate: 
+    alter table member 
+       modify column created_at  datetime(6)
+Hibernate: 
+    alter table member 
+       modify column updated_at  datetime(6)
+Hibernate: 
+    alter table member 
+       modify column gender  enum ('FEMALE','MALE','NONE')
+Hibernate: 
+    alter table member 
+       modify column member_status  enum ('ACTIVE','INACTIVE')
+Hibernate: 
+    alter table member 
+       modify column social_type  enum ('APPLE','GOOGLE','KAKAO','NAVER')
+Hibernate: 
+    alter table member_agree 
+       modify column created_at  datetime(6)
+Hibernate: 
+    alter table member_agree 
+       modify column updated_at  datetime(6)
+Hibernate: 
+    alter table member_mission 
+       modify column created_at  datetime(6)
+Hibernate: 
+    alter table member_mission 
+       modify column updated_at  datetime(6)
+Hibernate: 
+    alter table member_mission 
+       modify column mission_status  enum ('CHALLENGING','COMPLETE')
+Hibernate: 
+    alter table member_prefer 
+       modify column created_at  datetime(6)
+Hibernate: 
+    alter table member_prefer 
+       modify column updated_at  datetime(6)
+Hibernate: 
+    alter table mission 
+       modify column created_at  datetime(6)
+Hibernate: 
+    alter table mission 
+       modify column updated_at  datetime(6)
+Hibernate: 
+    alter table region 
+       modify column created_at  datetime(6)
+Hibernate: 
+    alter table region 
+       modify column updated_at  datetime(6)
+Hibernate: 
+    alter table review 
+       modify column created_at  datetime(6)
+Hibernate: 
+    alter table review 
+       modify column updated_at  datetime(6)
+Hibernate: 
+    alter table review 
+       modify column score  float(23)
+Hibernate: 
+    alter table review_image 
+       modify column created_at  datetime(6)
+Hibernate: 
+    alter table review_image 
+       modify column updated_at  datetime(6)
+Hibernate: 
+    alter table store 
+       modify column created_at  datetime(6)
+Hibernate: 
+    alter table store 
+       modify column updated_at  datetime(6)
+Hibernate: 
+    alter table store 
+       modify column score  float(23)
+Hibernate: 
+    alter table terms 
+       modify column created_at  datetime(6)
+Hibernate: 
+    alter table terms 
+       modify column updated_at  datetime(6)
+2025-05-27T17:47:43.783+09:00  INFO 19392 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-27T17:47:45.101+09:00  WARN 19392 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-27T17:47:45.888+09:00  INFO 19392 --- [    Test worker] umc.spring.ApplicationTests              : Started ApplicationTests in 8.068 seconds (process running for 9.966)
+Executing findStoresByNameAndScore with parameters:
+Name: 요아정
+Score: 4.0
+Hibernate: 
+    /* select
+        store 
+    from
+        Store store 
+    where
+        store.name = ?1 
+        and store.score >= ?2 */ select
+            s1_0.id,
+            s1_0.address,
+            s1_0.created_at,
+            s1_0.name,
+            s1_0.region_id,
+            s1_0.score,
+            s1_0.updated_at 
+        from
+            store s1_0 
+        where
+            s1_0.name=? 
+            and s1_0.score>=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
